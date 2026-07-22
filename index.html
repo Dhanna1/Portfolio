@@ -1,0 +1,344 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dalton Hanna | Mechatronics Engineering Portfolio</title>
+<meta name="description" content="Mechatronics engineering portfolio featuring robotics, embedded products, CAD, automation and complete electromechanical prototypes.">
+<meta property="og:title" content="Dalton Hanna | Mechatronics Engineering Portfolio"><meta property="og:description" content="Mechatronics engineering portfolio featuring robotics, embedded products, CAD, automation and complete electromechanical prototypes.">
+<meta property="og:image" content="assets/images/social-preview.jpg"><meta name="twitter:card" content="summary_large_image">
+<style>
+:root{
+ --bg:#061019;--bg2:#091722;--panel:#0d1f2c;--panel2:#112735;
+ --text:#f4f8fa;--muted:#9dafba;--line:#263e4c;
+ --teal:#67dfcf;--teal2:#acf5eb;--blue:#3b97ff;--amber:#ffc56e;
+ --max:1240px;--radius:22px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(circle at 80% 0,rgba(59,151,255,.14),transparent 30%),linear-gradient(180deg,#061019,#08151f 50%,#061019);color:var(--text);font-family:Inter,Segoe UI,Arial,sans-serif;line-height:1.55}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{width:min(var(--max),calc(100% - 42px));margin:auto}
+.topbar{position:sticky;top:0;z-index:50;background:rgba(6,16,25,.88);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.07)}
+.nav{height:72px;display:flex;align-items:center;gap:25px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:900}.brand-mark{width:42px;height:42px;display:grid;place-items:center;border:1px solid var(--teal);color:var(--teal)}
+.navlinks{margin-left:auto;display:flex;gap:23px}.navlinks a{text-decoration:none;color:#bdc9cf;font-size:14px}.navlinks a:hover{color:var(--teal2)}
+.nav-cta{padding:10px 14px;border:1px solid var(--line);border-radius:9px;text-decoration:none;font-size:13px;font-weight:850}
+.eyebrow{color:var(--teal);letter-spacing:.19em;font-size:11px;font-weight:900;text-transform:uppercase}
+.hero{min-height:760px;display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:58px;padding:90px 0 76px}
+.hero h1{font-size:clamp(58px,8.4vw,112px);line-height:.88;letter-spacing:-.07em;margin:23px 0 28px}
+.hero h1 span{display:block;color:#dce6ea}
+.hero-lead{font-size:clamp(22px,2.7vw,36px);line-height:1.22;color:#dbe4e8;margin:0}.hero-lead em{font-style:normal;color:var(--teal)}
+.hero-copy{max-width:720px;color:var(--muted);font-size:17px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:33px}.btn{padding:13px 17px;border-radius:9px;text-decoration:none;font-size:14px;font-weight:850}.btn.primary{background:linear-gradient(90deg,var(--blue),#49cbbb)}.btn.secondary{border:1px solid #516b79}
+.hero-visual{position:relative}.photo-frame{overflow:hidden;border-radius:26px;border:1px solid var(--line);background:#0d1c27;box-shadow:0 28px 70px rgba(0,0,0,.35)}.photo-frame img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.hero-overlay{position:absolute;left:-24px;bottom:25px;width:290px;background:rgba(7,18,27,.91);backdrop-filter:blur(12px);border:1px solid var(--line);border-radius:14px;padding:19px}.hero-overlay b{display:block;color:var(--teal);font-size:11px;letter-spacing:.12em}.hero-overlay strong{display:block;font-size:25px;margin:5px 0}.hero-overlay span{font-size:13px;color:var(--muted)}
+.capability-strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:rgba(12,29,41,.72)}.capabilities{display:grid;grid-template-columns:repeat(6,1fr)}.capabilities span{text-align:center;padding:18px 8px;font-size:12px;color:#c8d3d9;border-left:1px solid var(--line)}.capabilities span:first-child{border-left:0}
+.section{padding:104px 0}.dark{background:rgba(10,25,36,.68)}.section-head{display:grid;grid-template-columns:.68fr 1.32fr;gap:55px;margin-bottom:45px}.section-head h2,.case-section h2,.contact h2{font-size:clamp(42px,5.6vw,74px);line-height:1.02;letter-spacing:-.045em;margin:0}.section-intro{color:var(--muted);font-size:18px;max-width:760px}
+.feature{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;padding:95px 0;border-top:1px solid rgba(255,255,255,.055)}.feature.reverse .feature-media{order:2}.feature.reverse .feature-copy{order:1}
+.feature-media{position:relative}.feature-media img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:24px;border:1px solid var(--line)}.image-label{position:absolute;left:16px;bottom:16px;background:rgba(6,16,25,.88);border:1px solid var(--line);border-radius:8px;padding:8px 11px;color:#d9e3e7;font-size:11px}
+.feature-copy h2{font-size:clamp(48px,6.5vw,84px);line-height:.96;letter-spacing:-.055em;margin:14px 0}.feature-copy .sub{font-size:clamp(21px,2.4vw,31px);color:#dae3e7;margin:0 0 16px}.feature-copy>p{color:var(--muted);font-size:17px}
+.result-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:27px 0}.result-grid div{padding:16px;border-left:1px solid var(--line)}.result-grid div:first-child{border-left:0;padding-left:0}.result-grid b{display:block;color:var(--teal);font-size:10px;letter-spacing:.12em}.result-grid strong{display:block;font-size:18px;margin-top:5px}.result-grid span{display:block;color:var(--muted);font-size:12px;margin-top:4px}
+.text-link{display:inline-block;color:var(--teal2);font-weight:900;text-decoration:none;font-size:14px}
+.project-dashboard{display:grid;grid-template-columns:1.4fr .7fr 1fr .55fr;border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-top:38px}.dash-row{display:contents}.dash-row>*{padding:16px 18px;border-top:1px solid var(--line);background:#0d1d29}.dash-row:first-child>*{border-top:0;background:#102431;color:var(--teal);font-size:11px;font-weight:900;letter-spacing:.1em}.status{font-size:11px;font-weight:900}.complete{color:#84f0bd}.prototype{color:#ffd18b}.development{color:#7db8ff}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.card{border:1px solid var(--line);border-radius:20px;overflow:hidden;background:#0c1c28}.card img{width:100%;height:360px;object-fit:cover}.card-body{padding:27px}.card h3{font-size:32px;margin:9px 0}.card p{color:var(--muted)}.tags{display:flex;gap:7px;flex-wrap:wrap;margin:18px 0 22px}.tags span{padding:6px 8px;background:#192c39;border-radius:6px;font-size:11px}
+.process-grid{display:grid;grid-template-columns:repeat(5,1fr);border:1px solid var(--line);border-radius:18px;overflow:hidden;margin-top:42px}.process-grid article{padding:28px 22px;background:#0c1d29;border-left:1px solid var(--line)}.process-grid article:first-child{border-left:0}.process-grid b{color:var(--teal)}.process-grid h3{font-size:23px;margin:12px 0 7px}.process-grid p{color:var(--muted);font-size:14px}
+.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:68px}.about-grid p{color:var(--muted);font-size:18px}.quote{font-size:clamp(28px,4vw,50px)!important;color:#e1e9ec!important;line-height:1.15!important;margin-top:0}
+.current-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:39px}.current{padding:26px;border:1px solid var(--line);border-radius:15px;background:#0d1d29}.current b{color:var(--teal);font-size:11px}.current p{color:var(--muted)}
+.contact{text-align:center;padding:125px 0}.contact a.email{font-size:clamp(24px,4vw,49px);font-weight:900;text-decoration:none;border-bottom:2px solid var(--teal)}
+footer{padding:28px 0;border-top:1px solid var(--line);color:#80929e;font-size:12px}.footer{display:flex;justify-content:space-between}
+.case-hero{padding:92px 0 78px;border-bottom:1px solid var(--line)}.case-hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}.case-hero h1{font-size:clamp(58px,8vw,106px);line-height:.9;letter-spacing:-.065em;margin:23px 0}.case-summary{font-size:clamp(22px,2.6vw,32px);line-height:1.25;color:#d6e0e5}.fact-grid{display:grid;grid-template-columns:repeat(2,1fr);border:1px solid var(--line);border-radius:13px;overflow:hidden;margin-top:28px}.fact{padding:17px;border:1px solid var(--line);margin:-1px 0 0 -1px}.fact b{display:block;color:var(--teal);font-size:10px;letter-spacing:.12em}.fact span{display:block;font-size:14px;margin-top:5px}
+.case-section{width:min(960px,calc(100% - 42px));margin:auto;padding:88px 0}.case-section.wide{width:min(var(--max),calc(100% - 42px))}.lead{font-size:clamp(21px,2.45vw,30px);color:#ced9de}
+.metric-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin-top:33px}.metric{padding:24px;border:1px solid var(--line);border-radius:14px;background:#0d1d29}.metric b{color:var(--teal);font-size:11px}.metric strong{display:block;font-size:29px;margin:8px 0 4px}.metric span{color:var(--muted);font-size:13px}
+.architecture{display:grid;grid-template-columns:1fr 50px 1fr 50px 1fr;align-items:center;gap:13px;margin-top:35px}.arch{padding:25px;border:1px solid var(--line);border-radius:14px;background:#0d1d29;text-align:center}.arch b{color:var(--teal);font-size:11px}.arch p{color:var(--muted);font-size:14px}.arrow{text-align:center;color:var(--teal);font-size:27px}
+.process-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:33px}.process-card{padding:25px;border:1px solid var(--line);border-radius:14px;background:#0d1d29}.process-card b{color:var(--teal);font-size:11px}.process-card p{color:var(--muted);font-size:14px}
+.timeline{margin-top:34px;border-left:2px solid var(--teal)}.timeline article{position:relative;padding:0 0 35px 32px}.timeline article:before{content:"";position:absolute;left:-8px;top:5px;width:13px;height:13px;background:var(--bg);border:2px solid var(--teal);border-radius:50%}.timeline b{color:var(--teal);font-size:11px}.timeline h3{margin:7px 0}.timeline p{color:var(--muted);margin:0}
+.challenge article{display:grid;grid-template-columns:56px 1fr;padding:24px 0;border-top:1px solid var(--line)}.challenge b{color:var(--teal)}.challenge h3{margin:0 0 6px}.challenge p{margin:0;color:var(--muted)}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:15px;margin-top:34px}.gallery figure{margin:0;border:1px solid var(--line);border-radius:15px;overflow:hidden;background:#0c1c28}.gallery img{width:100%;height:430px;object-fit:cover;cursor:zoom-in}.gallery figcaption{padding:14px 16px;color:var(--muted);font-size:13px}
+.cad-panel{border:1px solid var(--line);border-radius:20px;background:radial-gradient(circle,rgba(103,223,207,.12),transparent 48%),#0a1a26;padding:25px;overflow:hidden}.cad-svg{width:100%;height:auto;color:#67dfcf}.cad-svg .thick{stroke-width:4}.cad-svg path,.cad-svg rect,.cad-svg circle{stroke-width:2}.cad-svg .dim{stroke:#607b87;stroke-width:1.4}.cad-svg .glow{fill:#67dfcf}.cad-labels{fill:#9dafba;font-size:15px;letter-spacing:2px}
+.note{border-left:3px solid var(--amber);background:#171f25;padding:18px 20px;color:#cbd6db;margin-top:25px}.note b{color:var(--amber)}
+.downloads{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.download{padding:13px 16px;text-decoration:none;border:1px solid var(--line);border-radius:9px;background:#0d1d29;font-weight:850;font-size:14px}.download.primary{background:var(--blue);border-color:var(--blue)}
+.status-list{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:28px}.status-item{padding:16px;border:1px solid var(--line);border-radius:10px;background:#0d1d29}.status-item strong{display:block}.status-item span{color:var(--muted);font-size:13px}.check{color:#84f0bd}.pending{color:#ffd18b}
+.back{position:fixed;left:17px;bottom:17px;z-index:30;padding:10px 13px;background:rgba(6,16,25,.92);border:1px solid var(--line);border-radius:8px;text-decoration:none;font-size:12px}
+.lightbox{display:none;position:fixed;inset:0;z-index:100;background:rgba(0,0,0,.9);padding:30px;align-items:center;justify-content:center}.lightbox.open{display:flex}.lightbox img{max-width:95vw;max-height:90vh}.lightbox button{position:absolute;right:25px;top:20px;background:transparent;border:0;color:white;font-size:38px;cursor:pointer}
+.reveal{opacity:0;transform:translateY(18px);transition:.7s ease}.reveal.visible{opacity:1;transform:none}
+@media(max-width:960px){.navlinks{display:none}.hero,.feature,.section-head,.case-hero-grid,.about-grid{grid-template-columns:1fr}.feature.reverse .feature-media,.feature.reverse .feature-copy{order:initial}.capabilities{grid-template-columns:repeat(3,1fr)}.process-grid{grid-template-columns:1fr 1fr}.metric-grid{grid-template-columns:1fr 1fr}.architecture{grid-template-columns:1fr}.arrow{transform:rotate(90deg)}.process-cards{grid-template-columns:1fr 1fr}.hero-overlay{left:10px}}
+@media(max-width:660px){.cards,.gallery,.current-grid,.process-grid,.metric-grid,.process-cards,.status-list{grid-template-columns:1fr}.capabilities{grid-template-columns:1fr 1fr}.result-grid{grid-template-columns:1fr}.result-grid div{border-left:0;border-top:1px solid var(--line);padding-left:0}.project-dashboard{grid-template-columns:1fr}.dash-row{display:grid;grid-template-columns:1.3fr .7fr}.dash-row>*:nth-child(3),.dash-row>*:nth-child(4){display:none}.footer{flex-direction:column;gap:8px}.nav-cta{margin-left:auto}}
+
+.philosophy{padding:96px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:linear-gradient(135deg,rgba(14,31,44,.94),rgba(8,21,31,.94))}
+.philosophy-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:64px;align-items:start}
+.philosophy h2{font-size:clamp(42px,5.6vw,74px);line-height:1.02;letter-spacing:-.045em;margin:0}
+.philosophy p{font-size:20px;color:#ced9de;margin:0}
+.requirement-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:30px}
+.requirement-list div{padding:18px;border:1px solid var(--line);border-radius:12px;background:#0d1d29}
+.requirement-list b{display:block;color:var(--teal);font-size:11px;letter-spacing:.12em}
+.requirement-list span{display:block;margin-top:6px;color:#d8e1e5}
+.lesson-box{margin-top:28px;padding:28px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(145deg,#102431,#0b1924)}
+.lesson-box h3{font-size:27px;margin:0 0 10px}.lesson-box p{color:var(--muted);margin:0;font-size:17px}
+.version-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:28px}
+.version-list div{padding:18px;border-left:3px solid var(--teal);background:#0d1d29}
+.version-list b{display:block;color:#eef5f7}.version-list span{display:block;color:var(--muted);font-size:13px;margin-top:5px}
+@media(max-width:960px){.philosophy-grid{grid-template-columns:1fr}}
+@media(max-width:660px){.requirement-list,.version-list{grid-template-columns:1fr}}
+
+
+.about-philosophy{
+  padding:96px 0;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  background:
+    radial-gradient(circle at 85% 15%,rgba(57,204,190,.09),transparent 30%),
+    linear-gradient(135deg,rgba(14,31,44,.97),rgba(8,21,31,.97));
+}
+.about-philosophy-grid{
+  display:grid;
+  grid-template-columns:minmax(320px,.85fr) minmax(500px,1.35fr);
+  gap:72px;
+  align-items:start;
+}
+.about-philosophy .statement{
+  position:sticky;
+  top:100px;
+}
+.about-philosophy h2{
+  font-size:clamp(44px,5.2vw,76px);
+  line-height:1.01;
+  letter-spacing:-.045em;
+  margin:0 0 26px;
+}
+.about-philosophy .intro{
+  font-size:20px;
+  line-height:1.7;
+  color:#d5e0e4;
+  max-width:760px;
+  margin:0 0 28px;
+}
+.about-summary{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+  margin-top:30px;
+}
+.about-summary div{
+  padding:17px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:rgba(7,18,27,.68);
+}
+.about-summary b{
+  display:block;
+  color:var(--teal);
+  font-size:11px;
+  letter-spacing:.12em;
+  margin-bottom:6px;
+}
+.about-summary span{
+  color:#e9f0f2;
+  font-size:14px;
+}
+.principles{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:14px;
+  margin-top:30px;
+}
+.principle{
+  min-height:190px;
+  padding:25px;
+  border:1px solid var(--line);
+  border-radius:16px;
+  background:linear-gradient(145deg,rgba(16,36,49,.9),rgba(9,23,33,.9));
+}
+.principle .number{
+  display:block;
+  color:var(--teal);
+  font-size:12px;
+  letter-spacing:.14em;
+  margin-bottom:30px;
+}
+.principle h3{
+  margin:0 0 10px;
+  font-size:25px;
+}
+.principle p{
+  margin:0;
+  color:var(--muted);
+  font-size:15px;
+  line-height:1.65;
+}
+.engineering-path{
+  display:grid;
+  grid-template-columns:repeat(7,1fr);
+  gap:8px;
+  margin-top:32px;
+}
+.engineering-path span{
+  position:relative;
+  padding:13px 7px;
+  border:1px solid var(--line);
+  border-radius:9px;
+  background:#0b1b27;
+  text-align:center;
+  color:#dce7ea;
+  font-size:11px;
+  letter-spacing:.06em;
+}
+.engineering-path span:not(:last-child)::after{
+  content:"→";
+  position:absolute;
+  right:-10px;
+  top:50%;
+  transform:translateY(-50%);
+  color:var(--teal);
+  z-index:2;
+}
+.philosophy-quote{
+  margin:32px 0 0;
+  padding:24px 0 0;
+  border-top:1px solid var(--line);
+  color:#eff6f7;
+  font-size:22px;
+  line-height:1.5;
+  font-weight:600;
+}
+@media(max-width:1000px){
+  .about-philosophy-grid{grid-template-columns:1fr;gap:45px}
+  .about-philosophy .statement{position:static}
+}
+@media(max-width:720px){
+  .principles,.about-summary{grid-template-columns:1fr}
+  .engineering-path{grid-template-columns:1fr 1fr}
+  .engineering-path span::after{display:none}
+}
+
+
+/* Revision v4: About/philosophy layout refinement */
+.about-philosophy-grid{
+  grid-template-columns:minmax(280px,.72fr) minmax(0,1.28fr);
+  gap:clamp(42px,5vw,82px);
+}
+.about-philosophy .statement{
+  min-width:0;
+}
+.about-philosophy h2{
+  max-width:9.2ch;
+  font-size:clamp(44px,4.65vw,70px);
+  overflow-wrap:normal;
+  word-break:normal;
+}
+.about-philosophy .intro{
+  max-width:100%;
+}
+.about-philosophy-grid > div{
+  min-width:0;
+}
+.principles{
+  align-items:stretch;
+}
+.principle{
+  min-width:0;
+  overflow:hidden;
+}
+.principle h3,
+.principle p{
+  overflow-wrap:anywhere;
+}
+@media(max-width:1180px){
+  .about-philosophy-grid{
+    grid-template-columns:minmax(270px,.8fr) minmax(0,1.2fr);
+    gap:40px;
+  }
+  .about-philosophy h2{
+    font-size:clamp(42px,4.8vw,60px);
+  }
+}
+@media(max-width:1000px){
+  .about-philosophy-grid{grid-template-columns:1fr}
+  .about-philosophy h2{max-width:13ch}
+}
+
+</style></head><body><header class="topbar"><div class="wrap nav"><a class="brand" href="#top"><span class="brand-mark">DH</span><span>Dalton Hanna</span></a><nav class="navlinks"><a href="#projects">Projects</a><a href="#dashboard">Dashboard</a><a href="#process">Process</a><a href="#about">About</a><a href="#contact">Contact</a></nav><a class="nav-cta" href="downloads/Dalton_Hanna_Resume.docx" download>Resume ↗</a></div></header><main id="top">
+<section class="wrap hero"><div class="reveal"><p class="eyebrow">MECHATRONICS · AUTOMATION · ROBOTICS</p><h1>Dalton <span>Hanna</span></h1><p class="hero-lead">I design complete electromechanical systems—from <em>concept to working prototype.</em></p><p class="hero-copy">My projects combine mechanical design, CAD, embedded programming, electronics, rapid prototyping, testing and iterative improvement to solve real engineering problems.</p><div class="actions"><a class="btn primary" href="#projects">Explore Projects →</a><a class="btn secondary" href="downloads/Dalton_Hanna_Resume.docx" download>Download Resume ↓</a></div></div><div class="hero-visual reveal"><div class="photo-frame"><img src="assets/images/micromouse-hero.jpg" alt="Dalton Hanna's autonomous Micromouse prototype"></div><div class="hero-overlay"><b>FEATURED RESULT</b><strong>4 autonomous runs</strong><span>Custom chassis, wiring and wall-centering control.</span></div></div></section>
+
+
+<section class="about-philosophy" id="about">
+  <div class="wrap about-philosophy-grid">
+    <div class="statement reveal">
+      <p class="eyebrow">ABOUT ME + ENGINEERING PHILOSOPHY</p>
+      <h2>I build<br>complete<br>engineering<br>systems.</h2>
+      <p class="intro"><strong>Mechanical design, electronics, embedded software, testing and continuous improvement.</strong><br><br>I’m Dalton Hanna, a mechatronics engineering graduate focused on robotics, automation, embedded systems and product development. What excites me most is taking an idea through the entire process: defining the problem, designing the mechanics, integrating electronics, developing the controls and testing the real hardware until it becomes a working system.</p>
+      <div class="about-summary">
+        <div><b>EDUCATION</b><span>B.S. Mechatronics Engineering</span></div>
+        <div><b>FOCUS</b><span>Robotics, controls and automation</span></div>
+        <div><b>APPROACH</b><span>Design, build, test and improve</span></div>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <p class="intro">I enjoy working across mechanical, electrical and software boundaries because that is where the most interesting engineering decisions happen. A CAD model must leave room for wiring. Firmware must account for real sensor noise. A mechanism must be serviceable after assembly. My projects have taught me to judge a design by how the complete system behaves—not by whether each individual component works on its own.</p>
+
+      <div class="principles">
+        <article class="principle">
+          <span class="number">01 / COMPLETE SYSTEMS</span>
+          <h3>Carry the idea through.</h3>
+          <p>I prefer projects where I can contribute from the initial concept and CAD work through fabrication, electronics, programming, troubleshooting and final operation.</p>
+        </article>
+        <article class="principle">
+          <span class="number">02 / ITERATIVE DESIGN</span>
+          <h3>Use testing as evidence.</h3>
+          <p>The first working version is a checkpoint, not the finish line. Real testing reveals packaging, control, reliability and usability constraints that cannot always be predicted beforehand.</p>
+        </article>
+        <article class="principle">
+          <span class="number">03 / REAL HARDWARE</span>
+          <h3>Design for physical behavior.</h3>
+          <p>Motors behave differently, sensors produce noise, wires need space and printed parts have tolerances. I use calibration and hands-on troubleshooting to connect software decisions to real machine behavior.</p>
+        </article>
+        <article class="principle">
+          <span class="number">04 / CONTINUOUS IMPROVEMENT</span>
+          <h3>Always identify Version 2.</h3>
+          <p>Every finished project creates a clearer next step. I naturally look for ways to make systems more reliable, easier to assemble, easier to maintain and better suited for continued development.</p>
+        </article>
+      </div>
+
+      <div class="engineering-path" aria-label="Engineering development process">
+        <span>IDEA</span><span>CAD</span><span>ELECTRONICS</span><span>PROGRAMMING</span><span>TESTING</span><span>ITERATION</span><span>SYSTEM</span>
+      </div>
+
+      <blockquote class="philosophy-quote">“Engineering is not about getting the first design right. It is about learning enough from each version to build the next one better.”</blockquote>
+    </div>
+  </div>
+</section>
+
+
+<section class="capability-strip"><div class="wrap capabilities"><span>CAD & Product Design</span><span>Embedded Systems</span><span>Automation</span><span>Robotics</span><span>PLC & Controls</span><span>Rapid Prototyping</span></div></section>
+
+<section id="projects" class="dark"><div class="wrap feature"><div class="feature-media reveal"><img src="assets/images/micromouse-hero.jpg" alt="Micromouse assembled prototype"><span class="image-label">ASSEMBLED AUTONOMOUS PROTOTYPE</span></div><div class="feature-copy reveal"><p class="eyebrow">AUTONOMOUS ROBOTICS · COMPLETE</p><h2>Micromouse</h2><p class="sub">A robot that senses, decides and navigates independently.</p><p>I designed the chassis, built the wiring and calibrated the embedded control system. The final robot completed four autonomous runs and reached the maze goal several times.</p><div class="result-grid"><div><b>COMPLETED</b><strong>4 full runs</strong><span>Fully autonomous operation</span></div><div><b>IMPROVED</b><strong>Wall centering</strong><span>Reduced collisions</span></div><div><b>LIMITATION</b><strong>Repeated left turns</strong><span>Exposed open-loop weakness</span></div></div><a class="text-link" href="projects/micromouse.html">View full case study →</a></div></div></section>
+
+<section><div class="wrap feature reverse"><div class="feature-media reveal"><img src="assets/images/lockbox-hero.jpg" alt="Finished timed lockbox"><span class="image-label">FINAL PRINTED ENCLOSURE</span></div><div class="feature-copy reveal"><p class="eyebrow">EMBEDDED PRODUCT · COMPLETE</p><h2>Timed Lockbox</h2><p class="sub">A digital countdown transformed into a physical restriction.</p><p>I designed the ventilated enclosure, built and wired every subsystem and validated dependable lock, display and timer operation.</p><div class="result-grid"><div><b>TESTED</b><strong>3-hour timer</strong><span>Longest duration tested</span></div><div><b>RELIABILITY</b><strong>10 cycles</strong><span>No failures during repeated test</span></div><div><b>LEARNED</b><strong>External power access</strong><span>Needed for fail-safe recovery</span></div></div><a class="text-link" href="projects/lockbox.html">View full case study →</a></div></div></section>
+
+<section class="dark"><div class="wrap feature"><div class="feature-media reveal"><img src="assets/images/calendate-hero.jpg" alt="Calendate OLED interface simulation"><span class="image-label">FUNCTIONAL INTERFACE SIMULATION</span></div><div class="feature-copy reveal"><p class="eyebrow">CONNECTED PRODUCT · IN DEVELOPMENT</p><h2>Calendate</h2><p class="sub">A pocket-sized connected device built around shared moments.</p><p>The complete standalone interface and one-button navigation work in simulation. The enclosure has gone through more than eight iterations, with physical assembly and cloud integration remaining.</p><div class="result-grid"><div><b>ITERATIONS</b><strong>8+</strong><span>Enclosure refinements</span></div><div><b>COMPLETE</b><strong>Standalone UI</strong><span>Screens and navigation</span></div><div><b>NEXT</b><strong>ESP32 integration</strong><span>Soldering and cloud link</span></div></div><a class="text-link" href="projects/calendate.html">View full case study →</a></div></div></section>
+
+<section class="section"><div class="wrap"><div class="section-head reveal"><div><p class="eyebrow">ADDITIONAL PROJECTS</p></div><div><h2>Two projects showing different stages of engineering development.</h2><p class="section-intro">The robotic arm documents lessons from an exposed development platform, while the Cat Laser demonstrates a concept carried through to a finished, usable product.</p></div></div><div class="cards"><article class="card reveal"><img src="assets/images/arm-hero.jpg" alt="Six degree of freedom robotic arm test setup"><div class="card-body"><p class="eyebrow">ROBOTICS · FUNCTIONAL PROTOTYPE</p><h3>6-DOF Robotic Arm</h3><p>All six axes operated, but shaking, inconsistent grip and cable tangling revealed the importance of mechanical stiffness, joint limits and cable routing.</p><div class="tags"><span>Arduino Mega</span><span>Six Servo Axes</span><span>Dual Joysticks</span></div><a class="text-link" href="projects/robotic-arm.html">View case study →</a></div></article><article class="card reveal"><img src="assets/images/laser-hero.jpg" alt="Finished automated cat laser product"><div class="card-body"><p class="eyebrow">PROGRAMMABLE PRODUCT · COMPLETE</p><h3>Automated Cat Laser</h3><p>A finished embedded product with dependable controls, multiple programmable motion patterns and an accessible programming connection for future feature expansion.</p><div class="tags"><span>Arduino</span><span>Servo Motion</span><span>Programmable Patterns</span></div><a class="text-link" href="projects/cat-laser.html">View case study →</a></div></article></div></div></section>
+
+<section id="dashboard" class="section dark"><div class="wrap"><div class="section-head reveal"><div><p class="eyebrow">PROJECT DASHBOARD</p></div><div><h2>A quick view of what was built and where each system stands.</h2></div></div><div class="project-dashboard reveal">
+<div class="dash-row"><div>PROJECT</div><div>STATUS</div><div>DISCIPLINE</div><div>CASE STUDY</div></div>
+<div class="dash-row"><div>Micromouse</div><div class="status complete">COMPLETE</div><div>Autonomous Robotics</div><div><a href="projects/micromouse.html">Open →</a></div></div>
+<div class="dash-row"><div>Timed Lockbox</div><div class="status complete">COMPLETE</div><div>Embedded Product</div><div><a href="projects/lockbox.html">Open →</a></div></div>
+<div class="dash-row"><div>Calendate</div><div class="status development">DEVELOPMENT</div><div>IoT / Product Design</div><div><a href="projects/calendate.html">Open →</a></div></div>
+<div class="dash-row"><div>6-DOF Robotic Arm</div><div class="status prototype">PROTOTYPE</div><div>Robotics</div><div><a href="projects/robotic-arm.html">Open →</a></div></div>
+<div class="dash-row"><div>Automated Cat Laser</div><div class="status complete">COMPLETE</div><div>Programmable Product</div><div><a href="projects/cat-laser.html">Open →</a></div></div>
+</div></div></section>
+
+<section id="process" class="section"><div class="wrap"><p class="eyebrow reveal">ENGINEERING PROCESS</p><h2 class="reveal" style="font-size:clamp(42px,5.6vw,74px);line-height:1.02">Define. Design. Build. Test. Learn. Repeat.</h2><div class="process-grid reveal"><article><b>01</b><h3>Define</h3><p>Understand the user, problem and measurable constraints.</p></article><article><b>02</b><h3>Design</h3><p>Develop mechanical, electrical and software decisions as one system.</p></article><article><b>03</b><h3>Build</h3><p>Translate CAD, wiring and code into a testable prototype.</p></article><article><b>04</b><h3>Test</h3><p>Reproduce failures and replace assumptions with evidence.</p></article><article><b>05</b><h3>Improve</h3><p>Use test results to guide the next iteration.</p></article></div></div></section>
+
+
+
+<section class="section"><div class="wrap"><p class="eyebrow reveal">CURRENTLY BUILDING</p><h2 class="reveal" style="font-size:clamp(42px,5.6vw,74px);line-height:1.02">Projects that continue beyond graduation.</h2><div class="current-grid"><article class="current reveal"><b>ACTIVE</b><h3>Calendate Hardware</h3><p>Soldered integration, ESP32 programming, battery validation and cloud synchronization.</p></article><article class="current reveal"><b>DEVELOPING</b><h3>PLC & Controls Practice</h3><p>Industrial sequences, electrical drawings, diagnostics and simulated automation cells.</p></article><article class="current reveal"><b>ONGOING</b><h3>Engineering Portfolio</h3><p>Documenting future machines, fixtures, prototypes and measurable lessons.</p></article></div></div></section>
+
+<section id="contact" class="contact dark"><div class="wrap"><p class="eyebrow reveal">AVAILABLE FOR ENGINEERING OPPORTUNITIES</p><h2 class="reveal">Have a machine, product or process that needs to work better?</h2><a class="email reveal" href="mailto:daltonhanna9@gmail.com">daltonhanna9@gmail.com</a></div></section>
+</main><footer><div class="wrap footer"><span>DALTON HANNA</span><span>MECHATRONICS ENGINEERING PORTFOLIO · 2026</span></div></footer><div class="lightbox"><button aria-label="Close">×</button><img alt="Expanded project image"></div><script>
+document.querySelectorAll('.reveal').forEach(el=>{
+ const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.1});
+ io.observe(el);
+});
+const lb=document.querySelector('.lightbox');
+document.querySelectorAll('.gallery img').forEach(img=>img.addEventListener('click',()=>{lb.querySelector('img').src=img.src;lb.classList.add('open')}));
+if(lb){lb.querySelector('button').addEventListener('click',()=>lb.classList.remove('open'));lb.addEventListener('click',e=>{if(e.target===lb)lb.classList.remove('open')})}
+</script></body></html>
