@@ -1,30 +1,96 @@
-DALTON HANNA PORTFOLIO — VERSION 4
+# Dalton Hanna Engineering Portfolio
 
-CONTENTS
-- Modern single-page homepage
-- Five deep engineering case studies
-- Real prototype and final-product photos
-- CAD-inspired visuals plus original Inventor downloads
-- Measurable project results
-- Development timelines, limitations, lessons and future revisions
-- Project dashboard
-- Social-sharing preview image
-- Resume, reports, source code and CAD downloads
+This repository contains the source code and assets for my personal engineering portfolio website.
 
-VIEW LOCALLY
-1. Extract the ZIP completely.
-2. Keep index.html, projects, assets and downloads together.
-3. Open index.html in Chrome, Edge or Firefox.
+The portfolio showcases my work in robotics, automation, embedded systems, CAD, and product development through detailed engineering case studies.
 
-IMPORTANT
-The blueprint visuals on the Micromouse and Calendate pages communicate design intent.
-They are not direct renders exported from Autodesk Inventor. The original .ipt files are included.
+---
 
+## Featured Projects
 
-REVISION NOTES
-- Added Engineering Philosophy to homepage.
-- Reframed every case study around the engineering challenge and requirements.
-- Added Lessons Learned and If I Built Version 2 sections.
-- Corrected Micromouse photo captions: the heavily wired image is the finished build;
-  the cleaner image is the earlier system before the Arduino and final wiring were installed.
-- Reclassified Automated Cat Laser as a finished programmable product.
+- Autonomous Micromouse
+- Calendate
+- Timed Lockbox
+- 6-DOF Robotic Arm
+- Programmable Cat Laser
+
+Each project includes:
+
+- Project overview
+- Engineering challenge
+- Design process
+- System architecture
+- Results
+- Lessons learned
+- Future improvements
+
+---
+
+## Project Structure
+
+```
+index.html                Homepage
+
+projects/
+    micromouse.html
+    calendate.html
+    lockbox.html
+    robotic-arm.html
+    cat-laser.html
+
+assets/
+    images/
+    css/
+    js/
+
+downloads/
+    Resume
+    Reports
+```
+
+---
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+- Responsive Design
+- GitHub Pages
+
+---
+
+## Viewing the Portfolio
+
+If viewing locally:
+
+1. Open `index.html` in any modern web browser.
+
+If viewing online:
+
+Visit the live portfolio website:
+
+**(Insert GitHub Pages URL here)**
+
+---
+
+## About Me
+
+I'm Dalton Hanna, a Mechatronics Engineering graduate passionate about robotics, automation, embedded systems, and product development.
+
+I enjoy designing complete engineering systems—from concept and CAD to electronics, programming, testing, and continuous improvement.
+
+---
+
+## Contact
+
+**Email**
+
+daltonhanna9@gmail.com
+
+**LinkedIn**
+www.linkedin.com/in/dalton-hanna-4767a72b0
+
+**GitHub**
+
+https://github.com/Dhanna1
